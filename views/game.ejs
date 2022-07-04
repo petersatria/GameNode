@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/game.css">
+
+	<title>Play Game</title>
+</head>
+
+<body>
+	<nav id="gameNavbar" class="navbar navbar-expand py-0 mx-3 fixed-top">
+		<a class="back-btn" href="/">
+			<p>&lt;</p>
+		</a>
+		<ul class="navbar-nav mx-3">
+			<li class="nav-item">
+				<span class="logo"></span>
+			</li>
+			<li class="nav-item">
+				<h1 href="" class="nav-title">ROCK PAPER SCISSORS</h1>
+			</li>
+		</ul>
+	</nav>
+	<section class="container-fluid container-game">
+		<div class="game-wrapper position-absolute top-50 start-50 translate-middle options">
+			<div class="row text-center align-items-center mb-0">
+				<div class="col-6 col-sm-4">
+					<p class="player-text">player 1</p>
+				</div>
+				<div class="col-1 col-sm-4">
+				</div>
+				<div class="col-5 col-sm-4">
+					<p class="player-text">com</p>
+				</div>
+			</div>
+			<div class="row text-center d-flex justify-content-center align-items-center my-0">
+				<div class="col-4">
+					<div id="playerBatuBorder" class="border-option player-hand">
+						<button id="playerBatu" class="batu"></button>
+					</div>
+				</div>
+				<div class="col-4">
+				</div>
+				<div class="col-4">
+					<div id="comBatu" class="border-option computer-hand">
+						<span class="batu"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center d-flex justify-content-center align-items-center my-0">
+				<div class="col-4">
+					<div id="playerKertasBorder" class="border-option player-hand">
+						<button id="playerKertas" class="kertas"></button>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="border-result">
+						<p class="versus-text">VS</p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div id="comKertas" class="border-option computer-hand">
+						<span class="kertas"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center align-items-end my-0">
+				<div class="col-4">
+					<div id="playerGuntingBorder" class="border-option player-hand">
+						<button id="playerGunting" class="gunting"></button>
+					</div>
+				</div>
+				<div class="col-4">
+					<button class="refresh"></button>
+				</div>
+				<div class="col-4">
+					<div id="comGunting" class="border-option computer-hand">
+						<span class="gunting"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="/js/game.js"></script>
+
+</body>
+
+</html>

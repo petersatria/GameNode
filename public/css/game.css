@@ -1,0 +1,325 @@
+.container-game {
+	background: #9C835F;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.game-wrapper {
+	width: 60%;
+	margin-top: 50px;
+}
+
+.col-4 {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-item {
+	margin: 0 20px;
+}
+
+.nav-title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 49px;
+	text-align: center;
+	color: #F9B23D;
+}
+
+.back-btn {
+	font-weight: 700;
+	font-size: 68px;
+	line-height: 98px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #724C21;
+}
+
+.back-btn:hover{
+	color: inherit;
+}
+
+.logo {
+	background-image: url("../assets/game-assets/logo.png");
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	display: inline-block;
+	background-size: 100%;
+	width: 52px;
+	height: 52px;
+}
+
+.player-text {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 49px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.versus-text {
+	font-weight: 700;
+	font-size: 102px;
+	line-height: 196px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #BD0000;
+}
+
+.batu {
+	background: url('../assets/game-assets/batu.png');
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	display: inline-block;
+	background-size: 100%;
+	width: 98px;
+	height: 82px;
+	border: none
+}
+
+.kertas {
+	background: url('../assets/game-assets/kertas.png');
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	display: inline-block;
+	background-size: 100%;
+	width: 75px;
+	height: 110px;
+	border: none;
+}
+
+.gunting {
+	background: url('../assets/game-assets/gunting.png');
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	display: inline-block;
+	background-size: 100%;
+	width: 94px;
+	height: 130px;
+	border: none
+}
+
+.refresh {
+	background: url('../assets/game-assets/refresh.png');
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	display: inline-block;
+	background-size: 100%;
+	width: 47px;
+	height: 51px;
+	border: none
+}
+
+.border-option {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 163px;
+	height: 144px;
+	border-radius: 30px;
+}
+
+.border-option-selected {
+	background-color: #C4C4C4;
+}
+
+.border-result {
+	width: 231px;
+	height: 136px;
+	background: transparent;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.border-result-win {
+	background: #4C9654;
+	transform: rotate(-28.87deg);
+}
+
+.border-result-draw {
+	background: #035B0C;
+	transform: rotate(-28.87deg);
+}
+
+.result-text {
+	margin: 11%;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 40px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+
+	.nav-title,
+	.player-text {
+		font-size: 26px;
+	}
+
+	.versus-text {
+		font-size: 98px;
+	}
+
+	.result-text {
+		font-size: 28px;
+	}
+
+	.batu {
+		width: 88px;
+		height: 72px;
+	}
+
+	.kertas {
+		width: 65px;
+		height: 100px;
+	}
+
+	.gunting {
+		width: 84px;
+		height: 120px;
+	}
+
+	.refresh {
+		width: 37px;
+		height: 41px;
+	}
+
+	.game-wrapper {
+		width: 70%;
+	}
+}
+
+@media (max-width: 576px) {
+
+	.nav-title,
+	.player-text {
+		font-size: 22px;
+	}
+
+	.versus-text {
+		font-size: 94px;
+	}
+
+	.result-text {
+		font-size: 26px;
+	}
+
+	.batu {
+		width: 78px;
+		height: 62px;
+	}
+
+	.kertas {
+		width: 55px;
+		height: 90px;
+	}
+
+	.gunting {
+		width: 74px;
+		height: 110px;
+	}
+
+	.refresh {
+		width: 27px;
+		height: 31px;
+	}
+
+	.game-wrapper {
+		width: 80%;
+	}
+}
+
+@media (max-width: 426px) {
+	.nav-title {
+		line-height: 30px;
+		text-align: left;
+	}
+
+	.result-text {
+		font-size: 22px;
+		padding: 10px;
+	}
+
+	.player-text {
+		font-size: 20px;
+	}
+
+	.game-wrapper {
+		width: 85%;
+	}
+}
+
+.options button:hover {
+	transform: rotate(45deg);
+	animation-name: buttonSpin;
+	animation-duration: 800ms;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes buttonSpin {
+	0% {
+		transform: rotate(45deg);
+	}
+
+	10% {
+		transform: rotate(35deg);
+	}
+
+	20% {
+		transform: rotate(25deg);
+	}
+
+	30% {
+		transform: rotate(15deg);
+	}
+
+	40% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(-5deg);
+	}
+
+	60% {
+		transform: rotate(-15deg);
+	}
+
+	70% {
+		transform: rotate(-25deg);
+	}
+
+	80% {
+		transform: rotate(-35deg);
+	}
+
+	90% {
+		transform: rotate(-45deg);
+	}
+
+
+	100% {
+		transform: rotate(45deg);
+	}
+
+}
+
+.options button:disabled {
+	transform: none;
+	animation-name: none;
+
+}

@@ -1,0 +1,738 @@
+.container-login {
+	background-color: #F3AF34;
+	width: 65%;
+	height: 70%;
+	border-radius: 30px;
+}
+
+.container-login .form {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 50px;
+}
+
+.container-login .form button {
+	padding: 15px 40px;
+	margin-top: 80px;
+}
+
+.container-login a{
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.close {
+	justify-self: end;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.0);
+	transform: scale(2)
+}
+
+
+.container-fluid {
+	padding: 0;
+	overflow: hidden;
+}
+
+/* SETTING BACKGROUND */
+.bg-image {
+	background-image: url("/assets/main-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	position: static;
+	height: 140vh;
+}
+
+.bg-about {
+	background-image: url("/assets/the-games-bg.jpg");
+	background-size: cover;
+	position: static;
+	height: 140vh;
+}
+
+.bg-feature {
+	background-image: url("/assets/features.jpg");
+	background-size: cover;
+	position: static;
+	height: 140vh;
+}
+
+.bg-req {
+	background-image: url("/assets/requirements2.png");
+	background-size: cover;
+	background-position: center;
+	position: static;
+	height: 140vh;
+	margin-top: -1px;
+
+}
+
+.bg-quote {
+	background-image: url("/assets/top-score-bg.png");
+	background-size: cover;
+	position: static;
+	height: 140vh;
+}
+
+.bg-news {
+	background-image: url("/assets/newsletter.png");
+	background-size: cover;
+	position: static;
+	height: 140vh;
+}
+
+/* HERO */
+#mainNavbar {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+	margin-left: 5em;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 33px;
+	/* identical to box height */
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+#mainNavbar .nav-link {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	margin-left: 20px;
+}
+
+.hero-h1 {
+	font-size: 80px;
+	text-transform: uppercase;
+	margin: 50px 0;
+}
+
+.hero-h3 {
+	font-weight: 100;
+	margin: 50px 0;
+}
+
+/* .home-content {
+	margin-top: 110px;
+} */
+
+.btn-warning {
+	background-color: #F3AF34;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 1rem 5rem;
+}
+
+.scroll-link {
+	background-image: url("/assets/scroll-down.svg");
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 130%;
+	left: 48%;
+	transform: translateY(-48%);
+	width: 70px;
+	height: 40px;
+}
+
+/* ABOUT + GALLERY */
+.row-about {
+	position: relative;
+	top: 25%;
+}
+
+.content-h2 {
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 55px;
+	line-height: 64px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.col-about .content-h2 {
+	margin-top: 10px;
+	;
+}
+
+.content-h3 {
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.col-about .content-h3 {
+	margin-left: 10px;
+}
+
+.img-about {
+	width: 96%;
+	margin-top: 40px;
+	background-size: cover;
+
+}
+
+.carousel-indicators [data-bs-target] {
+	border-radius: 50%;
+	height: 14px;
+	width: 14px;
+	margin-left: 25px;
+	border: solid white;
+	background-color: transparent;
+
+}
+
+.carousel-indicators .active {
+	background-color: white;
+	background-clip: border-box;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+	opacity: 1;
+}
+
+.carousel-control-prev {
+	left: -10%;
+}
+
+.carousel-control-next {
+	right: -10%;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("/assets/switch-left.svg");
+}
+
+.carousel-control-next-icon {
+	background-image: url("/assets/switch-right.svg");
+}
+
+
+/* GAME FEATURES */
+.row-feature {
+	position: relative;
+	top: 25%;
+}
+
+.title-content {
+	color: #F3AF34;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 2px;
+}
+
+.content-p4 {
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 22px;
+	/* or 122% */
+	color: white;
+}
+
+.line-feature {
+	position: absolute;
+	height: 144px;
+	top: 35%;
+	right: 40.6%;
+	transform: translateX(-40.6%);
+}
+
+/* SYSTEM REQUIREMENTS */
+.row-req {
+	position: relative;
+	top: 25%;
+}
+
+.p-req {
+	position: relative;
+	display: inline;
+	left: 43%;
+	top: 10%;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 3px;
+}
+
+/* QUOTES */
+.card {
+	background: rgba(255, 255, 255, 0.08);
+	width: 453px;
+	height: 183px;
+	border-radius: 10px;
+}
+
+.card-md {
+	height: 205px;
+}
+
+.card-p {
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 5px;
+	color: #FFFFFF;
+	opacity: 0.5;
+}
+
+.card-date {
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 30px;
+	color: #FFFFFF;
+	opacity: 0.5;
+}
+
+.card-img {
+	border-radius: 50%;
+	position: relative;
+	width: 62px;
+	height: 62px;
+	right: 2px;
+	bottom: 2px;
+}
+
+.ellipse-svg {
+	position: absolute;
+	left: 20px;
+	width: 65px;
+	height: 65px;
+}
+
+.card-svg {
+	position: relative;
+	left: 80%;
+	bottom: 20px;
+}
+
+.row-quote {
+	position: relative;
+	top: 25%;
+}
+
+.col-quote {
+	position: relative;
+	left: 10%;
+}
+
+.col-quote .content-p4 {
+	margin-right: 100px;
+}
+
+.btn-news {
+	padding: 1rem 4rem;
+
+}
+
+/* SUBSCRIBE + FOOTER */
+.col-email {
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 5px;
+}
+
+.col-email .form-control {
+	border: none;
+	margin-top: 0;
+	background-color: rgba(255, 255, 255, 0);
+	color: #F3AF34;
+}
+
+.col-email .form-control:focus {
+	outline: none;
+	background-color: rgba(255, 255, 255, 0);
+	margin-top: 0;
+	border-width: 0px;
+	color: #F3AF34;
+}
+
+.col-email .form-label {
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-weight: 100;
+	font-size: 14px;
+	color: #FFFFFF;
+	opacity: 0.5;
+	margin-left: 12px;
+}
+
+.row-news {
+	position: relative;
+	top: 10%;
+}
+
+.skull-border {
+	position: absolute;
+	left: 120px;
+}
+
+.form-control::placeholder {
+	color: #F3AF34;
+}
+
+.row-footer {
+	position: relative;
+	border: solid rgba(255, 255, 255, 0.5);
+	width: 85%;
+	top: 80px;
+}
+
+.tos {
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: right;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+}
+
+.copyright {
+	line-height: 20px;
+}
+
+#mainFooter .nav-link {
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	padding: 0;
+	color: #FFFFFF;
+	margin-left: 20px;
+}
+
+/* ANIMATE SCROLL DOWN */
+.up-down {
+	-webkit-animation: action 800ms infinite alternate;
+	animation: action 800ms infinite alternate;
+}
+
+@-webkit-keyframes action {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-15px);
+	}
+}
+
+@keyframes action {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-15px);
+	}
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 992px) {
+	.img-news {
+		display: none;
+	}
+
+	.row-req {
+		top: 18%;
+	}
+
+	.row-quote {
+		top: 5%;
+	}
+
+	.line-feature {
+		position: absolute;
+		height: 121px;
+		top: 37%;
+		left: 24.8%;
+		transform: translateX(-24.8%);
+	}
+}
+
+@media (max-width: 576px) {
+	.scroll-link {
+		top: 90%;
+		left: 45%;
+		transform: translateY(-45%);
+	}
+
+	.hero-h1 {
+		font-size: 3rem;
+	}
+
+	.hero-h3 {
+		font-size: 1.5rem;
+	}
+
+	.btn-warning {
+		font-size: 1rem;
+		padding: 1rem 2rem;
+	}
+
+	.navbar-brand {
+		margin-left: 2em;
+	}
+
+	.bg-image {
+		height: 100vh;
+	}
+
+	.bg-about {
+		height: 100vh;
+	}
+
+	.bg-feature {
+		height: 100vh;
+	}
+
+	.bg-req {
+		height: 100vh;
+		background-position: right 25% bottom 45%;
+	}
+
+	.bg-quote {
+		height: 130vh;
+	}
+
+	.bg-news {
+		height: 110vh;
+	}
+
+	.row-news .img-news {
+		display: none;
+	}
+
+	.content-h3 {
+		font-size: 14px;
+	}
+
+	.col-about .content-h3 {
+		margin: 10px 0;
+	}
+
+	.col-about .content-h2 {
+		margin-top: 0;
+	}
+
+	.content-h2 {
+		margin: 20px 0;
+		font-size: 2.5rem;
+		line-height: 44px;
+	}
+
+	.carousel-control-next {
+		right: 0;
+	}
+
+	.carousel-control-prev {
+		left: 0;
+	}
+
+	.row-feature {
+		position: relative;
+		top: 5px;
+		left: -40px;
+	}
+
+	.col-feature {
+		position: relative;
+		left: -60px;
+		top: 5px;
+	}
+
+	.line-feature {
+		position: absolute;
+		height: 112px;
+		top: 41%;
+		left: 21.4%;
+		transform: translateX(-21.4%);
+	}
+
+	.row-req {
+		top: -65px;
+		right: 10%;
+	}
+
+	.col-req h2 {
+		position: relative;
+		top: 60%;
+		left: -10px;
+		font-size: 2rem;
+	}
+
+	.p-req {
+		left: 10%;
+		letter-spacing: 2px;
+		top: 1%;
+	}
+
+	.title-content {
+		font-size: 16px;
+		line-height: 15px;
+		letter-spacing: 1px;
+	}
+
+	.content-p4 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.row-quote {
+		top: 5%;
+	}
+
+	.col-quote {
+		left: 0;
+	}
+
+	/* h2.content-h2.my-4 {
+		margin: 0;
+	} */
+
+	/* .card-date {
+		display: flex;
+		justify-content: end;
+		position: relative;
+		bottom: 40px;
+	} */
+
+	.card {
+		width: 320px;
+		height: 153px;
+	}
+
+	.col-quote {
+		left: 0;
+	}
+
+	.col-quote-header .title-content {
+		position: relative;
+		left: 50px;
+	}
+
+	.col-quote-header .card-p {
+		position: relative;
+		left: 50px;
+	}
+
+	.card-date {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	.col-quote-content .content-p4 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	/* .col-email {
+		width: auto;
+	} */
+
+	.btn-warning.btn-news {
+		padding: 1rem 1rem;
+	}
+
+	.row-footer {
+		top: 0;
+	}
+
+	#mainFooter .nav-link {
+		font-size: 8px;
+		line-height: 16px;
+		letter-spacing: 0.1em;
+		margin-left: -15px;
+	}
+
+	.pb-5 {
+		padding-bottom: 2rem !important;
+	}
+
+	.tos {
+		font-size: 10px;
+	}
+
+	.col-social-media {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 376px) {
+	.hero-h3 {
+		font-size: 1rem;
+	}
+
+	.content-h2 {
+		font-size: 2rem;
+	}
+
+	.content-h3 {
+		font-size: 12px;
+	}
+
+	.btn-warning {
+		font-size: 0.8rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.col-req h2 {
+		position: relative;
+		top: 60%;
+		left: -35px;
+		font-size: 2rem;
+	}
+
+	.p-req {
+		font-size: 10px;
+	}
+
+	.btn-warning.btn-news {
+		font-size: 0.8rem;
+	}
+
+	.form-label {
+
+		font-size: 12px;
+
+	}
+
+	.form-control {
+		font-size: 0.8rem;
+		width: auto;
+	}
+
+	.card-date {
+		font-size: 10px;
+	}
+
+	.tos {
+		font-size: 8px;
+	}
+
+}
