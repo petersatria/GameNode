@@ -1,0 +1,37 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container my-5">
+	<div class="view-user p-5">
+
+		<div class="row mb-5">
+			<div class="col text-center">
+				<h3>History of <%= user.username %></h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">Win</th>
+							<th scope="col">Draw</th>
+							<th scope="col">Lose</th>
+							<th scope="col">Date</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% user.game_history.forEach(element => { %>
+						<tr>
+							<td><%= element.win %> </td>
+							<td><%= element.draw %> </td>
+							<td><%= element.lose %> </td>
+							<td><%= element.date_time %> </td>
+						</tr>
+						<% }); %>
+					</tbody>
+				</table>
+				<a href="/dashboard" type="button" class="btn btn-light">Back</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -84,7 +84,7 @@
 
 /* HERO */
 #mainNavbar {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 1);
 }
 
 .navbar-brand {
@@ -383,9 +383,9 @@
 	left: 120px;
 }
 
-.form-control::placeholder {
+/* .form-control::placeholder {
 	color: #F3AF34;
-}
+} */
 
 .row-footer {
 	position: relative;
@@ -451,6 +451,12 @@
 	}
 }
 
+.login-main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
 
 /* MEDIA QUERY */
 @media (max-width: 992px) {
