@@ -3,6 +3,7 @@ const User = require('../models/user');
 const Profile = require('../models/user_profile');
 const History = require('../models/game_history');
 const mongoose = require('mongoose');
+const jwt = require('jsonwebtoken')
 
 exports.registerView = (req, res) => {
 	res.render('users/register')
@@ -48,9 +49,24 @@ exports.loginView = (req, res) => {
 	res.render('users/login')
 }
 
-exports.loginPost = (req, res) => {
+exports.loginPost = async (req, res) => {
 	req.flash('success', 'Welcome to My Game!');
-	res.redirect('/');
+	// res.redirect('/');
+	const user = await User.findOne({ username: req.body.username })
+	// if (!user) return res.status(400).send('Email not found');
+
+	const token = jwt.sign({
+		_id: user._id, type_user: user.type_user
+	}, process.env.TOKEN_SECRET, { expiresIn: 60 * 60 * 60 })
+
+	res.cookie('token', token, {
+		httpOnly: true
+	})
+	// res.header('auth-token', token)
+	// .send(token);
+	res.redirect('/')
+
+	// res.redirect('/');
 }
 
 exports.logoutPost = (req, res) => {

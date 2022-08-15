@@ -11,9 +11,24 @@ const session = require('express-session');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const ExpressError = require('./utils/ExpressError');
+const Dotenv = require('dotenv')
 
+const http = require('http')
+const socketio = require('socket.io')
 
+const server = http.createServer(app);
+const io = socketio(server)
+
+io.on('connection', (socket) => {
+	console.log('connected')
+})
+
+Dotenv.config();
 app.engine('ejs', ejsMate)
+
+const cookieParser = require('cookie-parser')
+app.use(cookieParser())
+
 
 app.set('view engine', 'ejs')
 app.use(express.json())
@@ -75,6 +90,6 @@ app.use((err, req, res, next) => {
 const ConnectionMongoDB = require('./config/connection')
 ConnectionMongoDB()
 
-app.listen(port, function () {
+server.listen(port, function () {
 	console.log(`Server is running in port : ${port}`)
 })

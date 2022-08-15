@@ -20,6 +20,7 @@
 				</tr>
 			</thead>
 			<tbody>
+				<% if(!user){ %>
 				<% for(let user of users) { %>
 				<tr>
 
@@ -38,6 +39,24 @@
 					</td>
 				</tr>
 				<% }%>
+				<% } else{%>
+				<tr>
+
+					<th scope="row"><%= user._id %></th>
+					<td><%= user.username %></td>
+					<td><%= user.email %></td>
+
+					<td class="text-end">
+						<a href="/dashboard/<%= user._id %> " type="button" class="btn btn-light btn-small">
+							Profile</a>
+						<a href="/dashboard/history/<%= user._id %>" type="button" class="btn btn-light btn-small">
+							History</a>
+						<form action="/dashboard/<%=user._id%>?_method=DELETE" method="POST">
+							<button class="btn btn-light btn-small">Delete</button>
+						</form>
+					</td>
+				</tr>
+				<% } %>
 			</tbody>
 		</table>
 	</div>

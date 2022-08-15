@@ -8,6 +8,7 @@ const UserSchema = new Schema({
 	username: { type: String },
 	password: { type: String },
 	email: { type: String, required: true, unique: true },
+	type_user: { type: String, default: 1 }, //regular user
 	user_profile: [{ type: Schema.Types.ObjectId, ref: 'Profile' }],
 	game_history: [{ type: Schema.Types.ObjectId, ref: 'History' }]
 })
